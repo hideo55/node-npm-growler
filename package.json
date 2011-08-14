@@ -1,0 +1,19 @@
+{
+  "name": "npm-growler",
+  "description": "Growl npm updates",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hideo55/npm-growler.git"
+  },
+  "author": "Hideaki Ohno",
+  "bin": { "npm-growler": "./npm-growler.js" },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+  	 "underscore" : ">=1.0.0",
+  	 "growl" : "",
+  	 "lru-cache" : ""
+  }
+}
