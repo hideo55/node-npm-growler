@@ -7,7 +7,7 @@ var lru = require('lru-cache');
 
 var options = {
 	host: 'search.npmjs.org',
-	path: '/_view/updated?limit=50'
+	path: '/_view/updated?limit=20'
 };
 
 var Seen = {};
@@ -39,4 +39,4 @@ var checkUpdate = function(){
 
 console.log('Start growl notify...');
 checkUpdate.call();
-setInterval(checkUpdate, 60000);
+setInterval(checkUpdate, 300000);

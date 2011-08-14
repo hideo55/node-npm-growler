@@ -3,12 +3,15 @@ This is NPM Growler: fetches NPM recent update modules and growls as new activie
 ## INSTALLATION
 
 clone from github.
+
     $ git clone git://github.com/hideo55/node-npm-growler.git
 
 npm link
+
     $ npm link node-npm-growler
 
 and run
+
     $ npm-growler
 
 ## AUTHOR
