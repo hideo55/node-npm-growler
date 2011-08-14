@@ -1,4 +1,4 @@
-#!/usr/bin/env perl -w
+#!/usr/bin/env node
 
 var _ = require('underscore')._;
 var http = require('http');
