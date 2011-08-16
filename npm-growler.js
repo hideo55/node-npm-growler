@@ -1,4 +1,4 @@
- # !/usr/bin/env node
+#!/usr/bin/env node
 var _ = require('underscore')._;
 var http = require('http');
 var growl = require('growl');
