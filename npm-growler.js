@@ -27,7 +27,7 @@ var options = {
 var Seen = {};
 function checkUpdate() {
   http.get(options, function(res) {
-    var self = this;
+    var that = this;
     var resBody = '';
     res.on('data', function(data) {
       resBody = resBody + data;
@@ -45,6 +45,7 @@ function checkUpdate() {
               'host' : 'search.npmjs.org',
               'path' : '/api/' + name
             }, function(res) {
+              var that = this;
               var resBody = '';
               res.on('data', function(data) {
                 resBody = resBody + data;
@@ -62,14 +63,14 @@ function checkUpdate() {
                     image : './npm-32.png'
                   });
                 }catch(e){
-                  
+                  that.emit('error', e);
                 }
               });
             });
           }
         });
       } catch (e) {
-        self.emit('error', e);
+        that.emit('error', e);
       }
     });
   }).on('error', function(e) {
