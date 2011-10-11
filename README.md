@@ -13,6 +13,7 @@ npm link
 and run
 
     $ npm-growler
+    $ npm-growler --interval 600000
 
 ## AUTHOR
 
