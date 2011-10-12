@@ -22,7 +22,7 @@ if (!new String(interval).match(/^[0-9]+$/)) {
 
 var options = {
   host : 'search.npmjs.org',
-  path : '/_view/updated?limit=20'
+  path : '/_view/updated?descending=true&limit=20'
 };
 var Seen = {};
 function checkUpdate() {
